@@ -17,3 +17,7 @@ function sidebar_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'sidebar_widgets_init' );
+
+
+// adds ACF sidebar fields
+require_once('includes/acf/settings.php');

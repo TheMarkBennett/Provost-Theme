@@ -24,7 +24,7 @@ acf_add_local_field_group(array(
 				'right_sidebar' => 'Right Sidebar',
 			),
 			'default_value' => array(
-				0 => 'No Sidebar',
+				0 => 'right_sidebar',
 			),
 			'allow_null' => 0,
 			'multiple' => 0,

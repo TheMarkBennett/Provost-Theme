@@ -1,20 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @TheMarkBennett Sign out
-7
-1 1 UCF/UCF-WordPress-Theme
- Code  Issues 5  Pull requests 0  Projects 0  Wiki  Insights
-UCF-WordPress-Theme/includes/header-functions.php
-6dc02ca  on Sep 28, 2018
-@cjg89 cjg89 Updated default header markup heading to always use .h1.d-block class…
-     
-571 lines (490 sloc)  17.2 KB
 <?php
 /**
  * Header Related Functions
@@ -513,16 +496,3 @@ if ( !function_exists( 'ucfwp_get_subnav_markup' ) ) {
 		}
 	}
 }
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.

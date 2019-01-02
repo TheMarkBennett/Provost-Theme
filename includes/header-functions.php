@@ -495,7 +495,7 @@ if ( !function_exists( 'ucfwp_get_header_default_markup' ) ) {
 		?>
 		<div class="container">
 			<<?php echo $title_elem; ?> class="<?php echo $title_classes; ?>">
-			<?php if(function_exists("seopress_display_breadcrumbs")) { seopress_display_breadcrumbs(); } ?>
+			<?php if(function_exists('seopress_display_breadcrumbs')) { seopress_display_breadcrumbs(); } ?>
 				<?php echo $title; ?>
 			</<?php echo $title_elem; ?>>
 

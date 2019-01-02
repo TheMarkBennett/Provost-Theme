@@ -23,4 +23,4 @@ add_action( 'widgets_init', 'sidebar_widgets_init' );
 require_once('includes/acf/settings.php');
 
 //add headers
-require_once('includes/header-functions.php');
+//require_once('includes/header-functions.php');

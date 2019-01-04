@@ -1,14 +1,4 @@
 <?php
-/**
- * Header Related Functions
- **/
-
-function remove_my_parent_theme_function() {
-    remove_action('after_setup_theme', 'ucfwp_get_header_default_markup');
-}
-add_action('wp_loaded', 'remove_my_parent_theme_function');
-
-
 
 
 /**

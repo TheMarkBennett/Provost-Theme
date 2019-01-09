@@ -9,8 +9,7 @@
 
 		<?php do_action( 'after_body_open' ); ?>
 
-		<header class="site-header">
-			<div class="container breadcrumbs"> <?php if(function_exists('seopress_display_breadcrumbs')) { seopress_display_breadcrumbs(); } ?></div>
+		<header class="site-header">			
 			<?php echo ucfwp_get_header_markup(); ?>
 		</header>
 

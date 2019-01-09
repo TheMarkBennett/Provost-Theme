@@ -20,7 +20,7 @@
 		$h1_elem             = ( is_home() || is_front_page() ) ? 'h2' : 'h1'; // name is misleading but we need to override this elem on the homepage
 		$title_elem          = ( $h1 === 'title' ) ? $h1_elem : 'span';
 		$subtitle_elem       = ( $h1 === 'subtitle' ) ? $h1_elem : 'p';
-		$title_classes = 'h1 d-block mt-3 mt-sm-4 mt-md-5 mb-2 mb-md-3';
+		$title_classes = 'h1 d-block mt-3 mt-sm-4 mt-md-4 mb-2 mb-md-3';
 		$subtitle_classes = 'lead mb-2 mb-md-3';
 		ob_start();
 	?>

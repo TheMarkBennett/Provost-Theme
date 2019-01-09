@@ -32,7 +32,7 @@
 		elseif ( $title ):
 		?>
 		<div class="container">
-		<div class="breadcrumbs"> <?php if(function_exists('seopress_display_breadcrumbs')) { seopress_display_breadcrumbs(); } ?></div>
+		<div class="breadcrumbs mt-4"> <?php if(function_exists('seopress_display_breadcrumbs')) { seopress_display_breadcrumbs(); } ?></div>
 			<<?php echo $title_elem; ?> class="<?php echo $title_classes; ?>">				
 				<?php echo $title; ?>
 			</<?php echo $title_elem; ?>>

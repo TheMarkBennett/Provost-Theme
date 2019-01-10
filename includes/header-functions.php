@@ -31,9 +31,9 @@
 			echo ucfwp_get_header_content_custom( $obj );
 		elseif ( $title ):
 		?>
-		<div class="container">
-			<div class="row">
-		<div class="breadcrumbs mt-4"> <?php if(function_exists('seopress_display_breadcrumbs')) { seopress_display_breadcrumbs(); } ?></div>
+		<div class="container pl-0 pr-0">
+			
+		<div class="ucf-breadcrumbs mt-4"> <?php if(function_exists('seopress_display_breadcrumbs')) { seopress_display_breadcrumbs(); } ?></div>
 			<<?php echo $title_elem; ?> class="<?php echo $title_classes; ?>">				
 				<?php echo $title; ?>
 			</<?php echo $title_elem; ?>>
@@ -43,7 +43,7 @@
 					<?php echo $subtitle; ?>
 				</<?php echo $subtitle_elem; ?>>
 			<?php endif; ?>
-			</div>
+
 		</div>
 		<?php endif; ?>
 	<?php

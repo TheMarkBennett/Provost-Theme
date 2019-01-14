@@ -7,12 +7,11 @@
 
 <?php get_header(); ?>
 
-<article class="<?php echo $post->post_status; ?> post-list-item">
-	<div class="container mt-4 mt-sm-5 mb-5 pb-sm-4">
-     <?php while ( have_posts() ) : the_post(); // standard WordPress loop. ?>
+<article class="<?php echo $post->post_status; ?> post-list-item" id="post-<?php the_ID(); ?>">
+	<div class="container mt-4 mt-sm-5 mb-5 pb-sm-4">     
         <h1><?php the_title() ?> </h1>
 		<?php the_content(); ?>
-     <?php endwhile; // end of the loop. ?>
+     
      <?php// WP_Query arguments
         $args = array(
             'post_type'              => array( 'initiatives' ),

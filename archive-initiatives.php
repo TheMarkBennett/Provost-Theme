@@ -23,7 +23,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
  		<article class="<?php echo $post->post_status; ?> post-list-item mt-4 mb-4 row no-gutters " style="background-color:#f9f9f9;">
 			<div class="col-md-4">
 			<?php if ( has_post_thumbnail() ) : ?>
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('ucf-spotlight-horizontal', ['class' => 'img-fluid']); ?></a>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', ['class' => 'img-fluid']); ?></a>
 			<?php endif; ?>
 		</div>
 			<div class="col-md-8 py-5 px-5 align-self-center text-center">

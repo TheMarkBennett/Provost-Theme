@@ -19,19 +19,18 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 	<div class="ucf-breadcrumbs mt-4">	 <?php if(function_exists("seopress_display_breadcrumbs")) { seopress_display_breadcrumbs(); } ?> </div>
 	 <?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
  	<?php if ( have_posts() ): ?>
+	 	<h3 class="mt-4"> Current Task Forces </h3>
  		<?php while ( have_posts() ) : the_post(); ?>
 		 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );?>
- 		<article class="<?php echo $post->post_status; ?> post-list-item mt-4 mb-4 row no-gutters " style="background-color:#f9f9f9;">
-		<div class="col-md-5"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat center top; background-size:cover;">
-					<div class="py-4 px-4"></div>
-		</div>
-			<div class="col-md-7 py-5 px-5 align-self-center text-center">
- 			<h2 class="h3">
+ 		<article class="<?php echo $post->post_status; ?> post-list-item mt-4 mb-4 row  " style="background-color:#f1f1f1;">
+		
+			<div class="col-md-7 py-5 px-5">
+ 			<h2 class="h3 text-secondary">
  				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
  			</h2>
  			<div class="summary">
  				<p><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>" class="btn btn-primary">Learn More</a>
+				<a href="<?php the_permalink(); ?>" class="">Learn More >></a>
  			</div>
 		</div>
  		</article>

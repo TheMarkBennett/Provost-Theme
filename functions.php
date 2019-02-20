@@ -27,3 +27,13 @@ require_once('includes/acf/settings.php');
 //add headers
 //require_once('includes/header-functions.php');
 require_once (get_stylesheet_directory() . '/includes/header-functions.php');
+
+
+
+// Add Shortcode
+function ucf_seo_press_shortcode() {
+
+    if(function_exists("seopress_display_breadcrumbs")) { seopress_display_breadcrumbs(); }
+
+}
+add_shortcode( 'ucf-seo-press', 'ucf_seo_press_shortcode' );

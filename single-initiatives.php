@@ -18,24 +18,24 @@
 			</div>	
 
 				<?php if( have_rows('taskforce_section_members') ): ?>
-				<?php while ( have_rows('taskforce_section_members') ) : the_row();?>
+				<?php while ( have_rows('taskforce_section_members') ) : the_row(); ?>
 				<div class="row">
 					<div class="col-12 col-md-4">
-						<?php	the_sub_field('taskforce_member_name');?> 
+						<?php	the_sub_field('taskforce_member_name'); ?> 
 					</div>
 					<div class="col-12 col-md-4">
-						<?php	the_sub_field('taskforce_member_position');?>
+						<?php	the_sub_field('taskforce_member_position'); ?>
 					</div>	
 					<div class="col-12 col-md-4">
-						<?php	the_sub_field('taskforce_member_email');?>
+						<?php	the_sub_field('taskforce_member_email'); ?>
 					</div>	
 				</div>
-				<?php endwhile;?>
+				<?php endwhile; ?>
 	
 
 				<?php endif; ?>
 
-			<?php endwhile;?>
+			<?php endwhile; ?>
 			</div>		
 		<?php endif; ?>		
 	

@@ -8,7 +8,7 @@
 
 		// check for rows (parent repeater)
 				if( have_rows('taskforce_tables') ): ?>
-					<div class="members">
+					<div class="members mt-5">
 					<?php 
 
 					// loop through rows (parent repeater)
@@ -45,7 +45,7 @@
 											<?php the_sub_field('taskforce_member_position'); ?>
 										</td>
 										<td>
-											<?php the_sub_field('taskforce_member_email'); ?>
+											<a href="mailto:<?php the_sub_field('taskforce_member_email'); ?>"><?php the_sub_field('taskforce_member_email'); ?></a>
 										</td>
 									</tr>	
 									

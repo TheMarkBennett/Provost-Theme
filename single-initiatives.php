@@ -20,7 +20,16 @@
 
 							// check for rows (sub repeater)
 							if( have_rows('taskforce_section_members') ): ?>
-								
+								<div class="row table-responsive">
+									<table class="table table-hover initiative-table">
+										<thead class="thead-default ">
+											<tr>											
+											<th>Name</th>
+											<th>Department</th>
+											<th>Email</th>
+											</tr>
+										</thead>
+										<tbody>
 								<?php 
 
 								// loop through rows (sub repeater)
@@ -28,21 +37,24 @@
 
 									// display each item as a list - with a class of completed ( if completed )
 									?>
-									<div class="row">
-										<div class="col-12 col-md-4">
+									<tr>
+										<td>
 											<?php the_sub_field('taskforce_member_name'); ?>
-										</div>
-										<div class="col-12 col-md-4">
+										</td>
+										<td>
 											<?php the_sub_field('taskforce_member_position'); ?>
-										</div>
-										<div class="col-12 col-md-4">
+										</td>
+										<td>
 											<?php the_sub_field('taskforce_member_email'); ?>
-										</div>
-									</div>
+										</td>
+									</tr>	
+									
 								<?php endwhile; ?>
 								
 							<?php endif; //if( get_sub_field('items') ): ?>
-							
+									</tbody>
+									</table>
+								</div>		
 
 					<?php endwhile; // while( has_sub_field('to-do_lists') ): ?>
 					</div>

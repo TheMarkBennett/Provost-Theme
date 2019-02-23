@@ -20,7 +20,7 @@
 
 							// check for rows (sub repeater)
 							if( have_rows('taskforce_section_members') ): ?>
-								<div class="row table-responsive">
+								<div class="row table-responsive mb-4">
 									<table class="table table-hover initiative-table">
 										<thead class="thead-default ">
 											<tr>											

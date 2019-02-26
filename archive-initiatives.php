@@ -21,8 +21,9 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 	'post_type' => 'initiatives',
 	'tax_query' => array(
 		array(
-			'taxonomy' => 'initiative_statu',
-			'field'    => 'active',			
+			'taxonomy' => 'initiative_status',
+			'field'    => 'slug',
+			'term'	   => 'active'			
 		),
 	),
 );

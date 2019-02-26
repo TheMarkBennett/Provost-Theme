@@ -52,7 +52,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 
 
 	 <?php 
-	$args = array(
+	$args2 = array(
 	'post_type' => 'initiatives',
 	'tax_query' => array(
 		array(
@@ -62,7 +62,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 		),
 	),
 );
-		$the_query1 = new WP_Query( $args ); ?>
+		$the_query1 = new WP_Query( $args2 ); ?>
 	 
 	 <?php if ( $the_query1->have_posts() ): ?>
 	 	<h2 class="mt-4 comp-init"> Completed Task Forces </h3>

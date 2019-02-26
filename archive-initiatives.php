@@ -30,7 +30,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 		$the_query = new WP_Query( $args ); ?>
 	
  	<?php if ( $the_query->have_posts() ): ?>
-	 	<h2 class="mt-4 heading-underline"> Current Task Forces </h3>
+	 	<h2 class="mt-4 active-int"> Current Task Forces </h3>
 		 <ul class="initiatives-list list-unstyled">
  		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 		 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );?>
@@ -47,14 +47,27 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 		</li>
  		</article>
  		<?php endwhile; ?>
-		 </ul>
- 	<?php else: ?>
- 		<p>No results found.</p>
+		 </ul> 	
  	<?php endif; ?>
 
-	 <h2 class="mt-4"> Completed Task Forces </h3>
-	 <ul class="initiatives-list list-unstyled">
- 		<?php while ( have_posts() ) : the_post(); ?>
+
+	 <?php 
+	$args = array(
+	'post_type' => 'initiatives',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'initiative_status',
+			'field'    => 'slug',
+			'terms'	   => 'active'			
+		),
+	),
+);
+		$the_query1 = new WP_Query( $args ); ?>
+	 
+	 <?php if ( $the_query1->have_posts() ): ?>
+	 	<h2 class="mt-4 comp-init"> Completed Task Forces </h3>
+		 <ul class="initiatives-list list-unstyled">
+ 		<?php while ( $the_query1->have_posts() ) : $the_query1->the_post(); ?>
 		 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );?>
  		<article class="<?php echo $post->post_status; ?> post-list-item mt-4 mb-4">
 		
@@ -69,7 +82,8 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 		</li>
  		</article>
  		<?php endwhile; ?>
-		 </ul>
+		 </ul> 	
+ 	<?php endif; ?>
 	 
  </div>
 

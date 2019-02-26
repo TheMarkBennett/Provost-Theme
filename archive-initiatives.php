@@ -23,12 +23,12 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 		array(
 			'taxonomy' => 'initiative_status',
 			'field'    => 'slug',
-			'term'	   => 'active'			
+			'terms'	   => 'active'			
 		),
 	),
 );
 		$the_query = new WP_Query( $args ); ?>
-	?>
+	
  	<?php if ( $the_query->have_posts() ): ?>
 	 	<h2 class="mt-4 heading-underline"> Current Task Forces </h3>
 		 <ul class="initiatives-list list-unstyled">

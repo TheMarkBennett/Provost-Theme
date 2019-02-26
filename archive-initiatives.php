@@ -41,8 +41,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
  				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
  			</h2>
  			<div class="summary">
- 				<p><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>" class="">Learn More >></a>
+ 				<p><?php the_excerpt(); ?></p>				
  			</div>
 		</li>
  		</article>
@@ -76,8 +75,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
  				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
  			</h2>
  			<div class="summary">
- 				<p><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>" class="">Learn More >></a>
+ 				<p><?php the_excerpt(); ?></p>				
  			</div>
 		</li>
  		</article>

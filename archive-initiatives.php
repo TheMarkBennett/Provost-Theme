@@ -37,7 +37,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
  		<article class="<?php echo $post->post_status; ?> post-list-item mt-4 mb-4">
 		
 			<li class="pb-3 initiatives ">
- 			<h3 class="text-secondary">
+ 			<h3 class="text-secondary h4">
  				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
  			</h2>
  			<div class="summary">
@@ -71,7 +71,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
  		<article class="<?php echo $post->post_status; ?> post-list-item mt-4 mb-4">
 		
 			<li class="pb-3 initiatives ">
- 			<h3 class="text-secondary">
+ 			<h3 class="text-secondary h4">
  				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
  			</h2>
  			<div class="summary">

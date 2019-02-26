@@ -58,7 +58,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 		array(
 			'taxonomy' => 'initiative_status',
 			'field'    => 'slug',
-			'terms'	   => 'active'			
+			'terms'	   => 'completed'			
 		),
 	),
 );

@@ -30,7 +30,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 		$the_query = new WP_Query( $args ); ?>
 	
  	<?php if ( $the_query->have_posts() ): ?>
-	 	<h2 class="mt-4 active-int"> Current Task Forces </h3>
+	 	<h2 class="mt-4 active-int"> Current Task Forces & Advisory Groups </h3>
 		 <ul class="initiatives-list list-unstyled">
  		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 		 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );?>
@@ -64,7 +64,7 @@ add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 		$the_query1 = new WP_Query( $args2 ); ?>
 	 
 	 <?php if ( $the_query1->have_posts() ): ?>
-	 	<h2 class="mt-4 comp-init"> Completed Task Forces </h3>
+	 	<h2 class="mt-4 comp-init"> Completed Task Forces & Advisory Groups </h3>
 		 <ul class="initiatives-list list-unstyled">
  		<?php while ( $the_query1->have_posts() ) : $the_query1->the_post(); ?>
 		 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );?>

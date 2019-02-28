@@ -21,9 +21,6 @@ add_action( 'widgets_init', 'sidebar_widgets_init' );
 
 define( 'PROVOST_THEME_DIR', get_stylesheet_directory() . '/' );
 
-// adds ACF sidebar fields
-require_once('includes/acf/settings.php');
-
 //add headers
 //require_once('includes/header-functions.php');
 require_once (get_stylesheet_directory() . '/includes/header-functions.php');

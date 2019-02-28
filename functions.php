@@ -28,6 +28,9 @@ require_once('includes/acf/settings.php');
 //require_once('includes/header-functions.php');
 require_once (get_stylesheet_directory() . '/includes/header-functions.php');
 
+//hide tempates
+require_once (get_stylesheet_directory() . '/includes/cpt-hide.php');
+
 
 
 // Add Shortcode

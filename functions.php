@@ -37,3 +37,9 @@ function ucf_seo_press_shortcode() {
 
 }
 add_shortcode( 'ucf-seo-press', 'ucf_seo_press_shortcode' );
+
+
+add_action( 'after_setup_theme', 'childtheme_formats', 11 );
+function childtheme_formats(){
+     add_theme_support( 'post-formats', array( 'aside', 'gallery', 'video','audio', 'link', 'status' ) );
+}

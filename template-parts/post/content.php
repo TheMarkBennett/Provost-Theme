@@ -3,7 +3,6 @@
  * Template part for displaying posts
  *
  */
-
 ?>
 
 <article  class="<?php echo $post->post_status; ?> post-list-item">
@@ -12,16 +11,17 @@
 
 			<?php if ( has_post_thumbnail() ): ?>
 				<div class="post-thumbnail">
-						<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid' ) ); ?>					
+						<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid' ) ); ?>
 				</div><!-- .post-thumbnail -->
 			<?php endif; ?>
 
 		</header><!-- .entry-header -->
 
-	</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
 
 	</div><!-- .entry-content -->
+
+</div>
 
 </article><!-- #post-## -->

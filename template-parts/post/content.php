@@ -11,7 +11,7 @@
 
 			<?php if ( has_post_thumbnail() ): ?>
 				<div class="post-thumbnail">
-						<?php the_post_thumbnail( 'large', array( 'class' => 'img-fluid mx-auto d-block mb-3' ) ); ?>
+						<?php the_post_thumbnail( 'large', array( 'class' => 'img-fluid mx-auto d-block mb-4' ) ); ?>
 				</div><!-- .post-thumbnail -->
 			<?php endif; ?>
 

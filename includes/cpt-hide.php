@@ -2,7 +2,7 @@
 //remove public query for person
 function ucf_cpt_remove_public_query( $args, $post_type ) {
 	// If not Products CPT, bail.
-$change_args = array("person", "ucf_section", "ucf_spotlight", "reporting");
+$change_args = array("ucf_section", "ucf_spotlight", "reporting");
 
     if ( !in_array($post_type, $change_args)) {
         return $args;

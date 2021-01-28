@@ -24,9 +24,9 @@
 									<table class="table table-hover initiative-table">
 										<thead class="thead-default ">
 											<tr>											
-											<th>Name</th>
-											<th>Department</th>
-											<th>Email</th>
+											<th class="w-25">Name</th>
+											<th class="w-50">Department</th>
+											<th class="w-25">Email</th>
 											</tr>
 										</thead>
 										<tbody>
